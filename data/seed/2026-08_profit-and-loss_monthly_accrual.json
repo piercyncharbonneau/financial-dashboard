@@ -1,0 +1,2041 @@
+{
+  "company": "Hoodz of Kansas City",
+  "reportName": "Profit and Loss",
+  "periodLabel": "January-August, 2026",
+  "basis": "accrual",
+  "periods": [
+    "Jan 2026",
+    "Feb 2026",
+    "Mar 2026",
+    "Apr 2026",
+    "May 2026",
+    "Jun 2026",
+    "Jul 2026",
+    "Aug 2026",
+    "Total"
+  ],
+  "rows": [
+    {
+      "label": "4000 Sales",
+      "displayName": "Sales",
+      "accountCode": "4000",
+      "depth": 1,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": -2456.0,
+        "Feb 2026": 35.0,
+        "Mar 2026": null,
+        "Apr 2026": 22.0,
+        "May 2026": 1145.19,
+        "Jun 2026": 1104.0,
+        "Jul 2026": -307.0,
+        "Aug 2026": -1232.0,
+        "Total": -1688.81
+      }
+    },
+    {
+      "label": "4003 Hood System Cleaning",
+      "displayName": "Hood System Cleaning",
+      "accountCode": "4003",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 131822.2,
+        "Feb 2026": 118320.41,
+        "Mar 2026": 118865.26,
+        "Apr 2026": 105548.26,
+        "May 2026": 113478.75,
+        "Jun 2026": 131281.36,
+        "Jul 2026": 147537.26,
+        "Aug 2026": 139557.26,
+        "Total": 1006410.76
+      }
+    },
+    {
+      "label": "4004 Hood System Inspection",
+      "displayName": "Hood System Inspection",
+      "accountCode": "4004",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": 50.0,
+        "Mar 2026": 95.0,
+        "Apr 2026": null,
+        "May 2026": 250.0,
+        "Jun 2026": 100.0,
+        "Jul 2026": 270.0,
+        "Aug 2026": 1235.0,
+        "Total": 2000.0
+      }
+    },
+    {
+      "label": "4005 Hood System Repair",
+      "displayName": "Hood System Repair",
+      "accountCode": "4005",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": 800.0,
+        "Aug 2026": null,
+        "Total": 800.0
+      }
+    },
+    {
+      "label": "4011 Oven Cleaning & Repair",
+      "displayName": "Oven Cleaning & Repair",
+      "accountCode": "4011",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 1575.0,
+        "Feb 2026": 1882.0,
+        "Mar 2026": 1950.0,
+        "Apr 2026": 1300.0,
+        "May 2026": 1875.0,
+        "Jun 2026": 350.0,
+        "Jul 2026": 1485.0,
+        "Aug 2026": 1985.0,
+        "Total": 12402.0
+      }
+    },
+    {
+      "label": "4013 Surface Cleaning",
+      "displayName": "Surface Cleaning",
+      "accountCode": "4013",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 50.0,
+        "Feb 2026": 50.0,
+        "Mar 2026": null,
+        "Apr 2026": 50.0,
+        "May 2026": 750.0,
+        "Jun 2026": 0,
+        "Jul 2026": 800.0,
+        "Aug 2026": 150.0,
+        "Total": 1850.0
+      }
+    },
+    {
+      "label": "4016 Other Services",
+      "displayName": "Other Services",
+      "accountCode": "4016",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 6056.0,
+        "Feb 2026": 5356.0,
+        "Mar 2026": 4797.0,
+        "Apr 2026": 6296.0,
+        "May 2026": 5351.95,
+        "Jun 2026": 6637.0,
+        "Jul 2026": 8566.0,
+        "Aug 2026": 7409.95,
+        "Total": 50469.899999999994
+      }
+    },
+    {
+      "label": "4060 Fees",
+      "displayName": "Fees",
+      "accountCode": "4060",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 1360.97,
+        "Feb 2026": 3250.48,
+        "Mar 2026": 1420.23,
+        "Apr 2026": 846.95,
+        "May 2026": 3595.69,
+        "Jun 2026": 2036.88,
+        "Jul 2026": 2922.72,
+        "Aug 2026": 5213.06,
+        "Total": 20646.98
+      }
+    },
+    {
+      "label": "Total for 4002 Services & Fees",
+      "displayName": "4002 Services & Fees",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 140864.17,
+        "Feb 2026": 128908.89,
+        "Mar 2026": 127127.48999999999,
+        "Apr 2026": 114041.20999999999,
+        "May 2026": 125301.39,
+        "Jun 2026": 140405.24,
+        "Jul 2026": 162380.98,
+        "Aug 2026": 155550.27000000002,
+        "Total": 1094579.6400000001
+      }
+    },
+    {
+      "label": "4031 Grease Containment System",
+      "displayName": "Grease Containment System",
+      "accountCode": "4031",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": 250.0,
+        "Mar 2026": 49.0,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": 1024.0,
+        "Aug 2026": 1100.0,
+        "Total": 2423.0
+      }
+    },
+    {
+      "label": "4032 Grease Containment Pillows",
+      "displayName": "Grease Containment Pillows",
+      "accountCode": "4032",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 75.0,
+        "Feb 2026": 49.0,
+        "Mar 2026": 98.0,
+        "Apr 2026": 607.0,
+        "May 2026": 245.0,
+        "Jun 2026": 245.0,
+        "Jul 2026": 3110.0,
+        "Aug 2026": 647.0,
+        "Total": 5076.0
+      }
+    },
+    {
+      "label": "Total for 4030 Grease Containment",
+      "displayName": "4030 Grease Containment",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 75.0,
+        "Feb 2026": 299.0,
+        "Mar 2026": 147.0,
+        "Apr 2026": 607.0,
+        "May 2026": 245.0,
+        "Jun 2026": 245.0,
+        "Jul 2026": 4134.0,
+        "Aug 2026": 1747.0,
+        "Total": 7499.0
+      }
+    },
+    {
+      "label": "4043 Exhaust Fan Hinges",
+      "displayName": "Exhaust Fan Hinges",
+      "accountCode": "4043",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": 550.0,
+        "Mar 2026": 1000.0,
+        "Apr 2026": 300.0,
+        "May 2026": 950.0,
+        "Jun 2026": 2150.0,
+        "Jul 2026": 950.0,
+        "Aug 2026": 2550.0,
+        "Total": 8450.0
+      }
+    },
+    {
+      "label": "4045 Other Parts & Supplies",
+      "displayName": "Other Parts & Supplies",
+      "accountCode": "4045",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": 1970.0,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": 99.0,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 2069.0
+      }
+    },
+    {
+      "label": "4048 Baffle-Type Hood Filters",
+      "displayName": "Baffle-Type Hood Filters",
+      "accountCode": "4048",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": 150.0,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 150.0
+      }
+    },
+    {
+      "label": "Total for 4040 Parts",
+      "displayName": "4040 Parts",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 0.0,
+        "Feb 2026": 700.0,
+        "Mar 2026": 2970.0,
+        "Apr 2026": 300.0,
+        "May 2026": 950.0,
+        "Jun 2026": 2249.0,
+        "Jul 2026": 950.0,
+        "Aug 2026": 2550.0,
+        "Total": 10669.0
+      }
+    },
+    {
+      "label": "Total for 4020 Products & Parts",
+      "displayName": "4020 Products & Parts",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 75.0,
+        "Feb 2026": 999.0,
+        "Mar 2026": 3117.0,
+        "Apr 2026": 907.0,
+        "May 2026": 1195.0,
+        "Jun 2026": 2494.0,
+        "Jul 2026": 5084.0,
+        "Aug 2026": 4297.0,
+        "Total": 18168.0
+      }
+    },
+    {
+      "label": "4070 Discounts",
+      "displayName": "Discounts",
+      "accountCode": "4070",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": -2016.5,
+        "Feb 2026": -1732.0,
+        "Mar 2026": -884.0,
+        "Apr 2026": -600.92,
+        "May 2026": -100.0,
+        "Jun 2026": -1971.0,
+        "Jul 2026": -666.5,
+        "Aug 2026": -147.0,
+        "Total": -8117.92
+      }
+    },
+    {
+      "label": "Total for 4000 Sales",
+      "displayName": "4000 Sales",
+      "accountCode": null,
+      "depth": 1,
+      "isSubtotal": true,
+      "section": "Income",
+      "values": {
+        "Jan 2026": 136466.67,
+        "Feb 2026": 128210.89,
+        "Mar 2026": 129360.48999999999,
+        "Apr 2026": 114369.29,
+        "May 2026": 127541.58,
+        "Jun 2026": 142032.24,
+        "Jul 2026": 166491.48,
+        "Aug 2026": 158468.27000000002,
+        "Total": 1102940.91
+      }
+    },
+    {
+      "label": "Sales of Product Income",
+      "displayName": "Sales of Product Income",
+      "accountCode": null,
+      "depth": 1,
+      "isSubtotal": false,
+      "section": "Income",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": 962.0,
+        "Aug 2026": null,
+        "Total": 962.0
+      }
+    },
+    {
+      "label": "5009 Consumables & Small Tools",
+      "displayName": "Consumables & Small Tools",
+      "accountCode": "5009",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": 175.44,
+        "May 2026": -14.71,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": 187.46,
+        "Total": 348.19
+      }
+    },
+    {
+      "label": "5001 Chemicals",
+      "displayName": "Chemicals",
+      "accountCode": "5001",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": 2081.3,
+        "Total": 2081.3
+      }
+    },
+    {
+      "label": "5002 Consumable Job Supplies",
+      "displayName": "Consumable Job Supplies",
+      "accountCode": "5002",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 2236.04,
+        "Feb 2026": 375.98,
+        "Mar 2026": 427.81,
+        "Apr 2026": 4252.6,
+        "May 2026": 1182.51,
+        "Jun 2026": 3390.57,
+        "Jul 2026": 332.11,
+        "Aug 2026": 2584.43,
+        "Total": 14782.050000000001
+      }
+    },
+    {
+      "label": "5003 Equipment Repairs & Maintenance",
+      "displayName": "Equipment Repairs & Maintenance",
+      "accountCode": "5003",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": 2844.0,
+        "Mar 2026": 1968.79,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": 810.66,
+        "Jul 2026": 4394.09,
+        "Aug 2026": 631.87,
+        "Total": 10649.410000000002
+      }
+    },
+    {
+      "label": "5004 Small Job Tools",
+      "displayName": "Small Job Tools",
+      "accountCode": "5004",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 958.36,
+        "Feb 2026": 1611.21,
+        "Mar 2026": 3965.81,
+        "Apr 2026": 1725.7,
+        "May 2026": 2442.08,
+        "Jun 2026": 3749.73,
+        "Jul 2026": 6579.54,
+        "Aug 2026": 1099.17,
+        "Total": 22131.6
+      }
+    },
+    {
+      "label": "Total for 5009 Consumables & Small Tools",
+      "displayName": "5009 Consumables & Small Tools",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 3194.4,
+        "Feb 2026": 4831.1900000000005,
+        "Mar 2026": 6362.41,
+        "Apr 2026": 6153.74,
+        "May 2026": 3609.88,
+        "Jun 2026": 7950.960000000001,
+        "Jul 2026": 11305.74,
+        "Aug 2026": 6584.2300000000005,
+        "Total": 49992.55
+      }
+    },
+    {
+      "label": "5010 Grease Containment (COGS)",
+      "displayName": "Grease Containment (COGS)",
+      "accountCode": "5010",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": 500.0,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 500.0
+      }
+    },
+    {
+      "label": "5020 Parts & Supply Cost",
+      "displayName": "Parts & Supply Cost",
+      "accountCode": "5020",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": 283.28,
+        "Apr 2026": 2068.14,
+        "May 2026": null,
+        "Jun 2026": 1259.74,
+        "Jul 2026": 2594.08,
+        "Aug 2026": null,
+        "Total": 6205.24
+      }
+    },
+    {
+      "label": "5025 Filter Inventory",
+      "displayName": "Filter Inventory",
+      "accountCode": "5025",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": 158.74,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 158.74
+      }
+    },
+    {
+      "label": "5027 PCU Type Filters",
+      "displayName": "PCU Type Filters",
+      "accountCode": "5027",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": 299.65,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 299.65
+      }
+    },
+    {
+      "label": "Total for 5025 Filter Inventory",
+      "displayName": "5025 Filter Inventory",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 0.0,
+        "Feb 2026": 0.0,
+        "Mar 2026": 158.74,
+        "Apr 2026": 0.0,
+        "May 2026": 0.0,
+        "Jun 2026": 299.65,
+        "Jul 2026": 0.0,
+        "Aug 2026": 0.0,
+        "Total": 458.39
+      }
+    },
+    {
+      "label": "5037 Soak Tank Chemicals",
+      "displayName": "Soak Tank Chemicals",
+      "accountCode": "5037",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": 208.53,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 208.53
+      }
+    },
+    {
+      "label": "Total for 5035 Soak Tank",
+      "displayName": "5035 Soak Tank",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 0.0,
+        "Feb 2026": 208.53,
+        "Mar 2026": 0.0,
+        "Apr 2026": 0.0,
+        "May 2026": 0.0,
+        "Jun 2026": 0.0,
+        "Jul 2026": 0.0,
+        "Aug 2026": 0.0,
+        "Total": 208.53
+      }
+    },
+    {
+      "label": "Total for 5020 Parts & Supply Cost",
+      "displayName": "5020 Parts & Supply Cost",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 0.0,
+        "Feb 2026": 208.53,
+        "Mar 2026": 442.02,
+        "Apr 2026": 2068.14,
+        "May 2026": 0.0,
+        "Jun 2026": 1559.3899999999999,
+        "Jul 2026": 2594.08,
+        "Aug 2026": 0.0,
+        "Total": 6872.16
+      }
+    },
+    {
+      "label": "Total for 5000 Job Supplies & Materials",
+      "displayName": "5000 Job Supplies & Materials",
+      "accountCode": null,
+      "depth": 1,
+      "isSubtotal": true,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 3194.4,
+        "Feb 2026": 5039.72,
+        "Mar 2026": 7304.43,
+        "Apr 2026": 8221.88,
+        "May 2026": 3609.88,
+        "Jun 2026": 9510.35,
+        "Jul 2026": 13899.82,
+        "Aug 2026": 6584.2300000000005,
+        "Total": 57364.71000000001
+      }
+    },
+    {
+      "label": "5030 Other Job Related Expenses",
+      "displayName": "Other Job Related Expenses",
+      "accountCode": "5030",
+      "depth": 1,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 2844.0,
+        "Feb 2026": 2367.0,
+        "Mar 2026": 2197.0,
+        "Apr 2026": 2449.32,
+        "May 2026": 2355.0,
+        "Jun 2026": 2773.0,
+        "Jul 2026": 3950.0,
+        "Aug 2026": 2546.0,
+        "Total": 21481.32
+      }
+    },
+    {
+      "label": "5050 Direct Rental - Equip/Machinery",
+      "displayName": "Direct Rental - Equip/Machinery",
+      "accountCode": "5050",
+      "depth": 1,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 492.63,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 492.63
+      }
+    },
+    {
+      "label": "5061 Technician Labor",
+      "displayName": "Technician Labor",
+      "accountCode": "5061",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 47989.38,
+        "Feb 2026": 40072.0,
+        "Mar 2026": 44990.87,
+        "Apr 2026": 35855.3,
+        "May 2026": 36463.77,
+        "Jun 2026": 47454.63,
+        "Jul 2026": 77710.36,
+        "Aug 2026": 57107.41,
+        "Total": 387643.72
+      }
+    },
+    {
+      "label": "5063 Technician Employer Payroll Tax",
+      "displayName": "Technician Employer Payroll Tax",
+      "accountCode": "5063",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 3905.82,
+        "Feb 2026": 3317.27,
+        "Mar 2026": 3356.32,
+        "Apr 2026": 2301.91,
+        "May 2026": 2869.86,
+        "Jun 2026": 3853.12,
+        "Jul 2026": 6171.47,
+        "Aug 2026": 4470.99,
+        "Total": 30246.760000000002
+      }
+    },
+    {
+      "label": "5065 Subcontractor",
+      "displayName": "Subcontractor",
+      "accountCode": "5065",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": 1903.52,
+        "Apr 2026": 1488.36,
+        "May 2026": 270.0,
+        "Jun 2026": null,
+        "Jul 2026": 4475.0,
+        "Aug 2026": null,
+        "Total": 8136.88
+      }
+    },
+    {
+      "label": "Total for 5060 Direct Personnel Cost",
+      "displayName": "5060 Direct Personnel Cost",
+      "accountCode": null,
+      "depth": 1,
+      "isSubtotal": true,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 51895.2,
+        "Feb 2026": 43389.27,
+        "Mar 2026": 50250.71,
+        "Apr 2026": 39645.57000000001,
+        "May 2026": 39603.63,
+        "Jun 2026": 51307.75,
+        "Jul 2026": 88356.83,
+        "Aug 2026": 61578.4,
+        "Total": 426027.36000000004
+      }
+    },
+    {
+      "label": "5071 Direct Fuel Expense",
+      "displayName": "Direct Fuel Expense",
+      "accountCode": "5071",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 2980.62,
+        "Feb 2026": 3513.41,
+        "Mar 2026": 4175.14,
+        "Apr 2026": 4496.46,
+        "May 2026": 5315.33,
+        "Jun 2026": 4663.96,
+        "Jul 2026": 5168.19,
+        "Aug 2026": 4707.03,
+        "Total": 35020.14
+      }
+    },
+    {
+      "label": "5074 Direct Meal (50%)",
+      "displayName": "Direct Meal (50%)",
+      "accountCode": "5074",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 105.64,
+        "Feb 2026": 494.26,
+        "Mar 2026": 321.37,
+        "Apr 2026": 388.3,
+        "May 2026": 285.06,
+        "Jun 2026": 143.14,
+        "Jul 2026": 1004.32,
+        "Aug 2026": 239.49,
+        "Total": 2981.58
+      }
+    },
+    {
+      "label": "5076 Direct Expense Parking & Tolls",
+      "displayName": "Direct Expense Parking & Tolls",
+      "accountCode": "5076",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 23.54,
+        "Feb 2026": 94.92,
+        "Mar 2026": 12.24,
+        "Apr 2026": 19.26,
+        "May 2026": 8.79,
+        "Jun 2026": 5.24,
+        "Jul 2026": 30.5,
+        "Aug 2026": 11.24,
+        "Total": 205.73000000000002
+      }
+    },
+    {
+      "label": "Total for 5070 Direct Transportation Cost",
+      "displayName": "5070 Direct Transportation Cost",
+      "accountCode": null,
+      "depth": 1,
+      "isSubtotal": true,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 3109.7999999999997,
+        "Feb 2026": 4102.59,
+        "Mar 2026": 4508.75,
+        "Apr 2026": 4904.02,
+        "May 2026": 5609.18,
+        "Jun 2026": 4812.34,
+        "Jul 2026": 6203.009999999999,
+        "Aug 2026": 4957.759999999999,
+        "Total": 38207.450000000004
+      }
+    },
+    {
+      "label": "5080 Credit Card Processing Fees",
+      "displayName": "Credit Card Processing Fees",
+      "accountCode": "5080",
+      "depth": 1,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 867.96,
+        "Feb 2026": 840.48,
+        "Mar 2026": 588.04,
+        "Apr 2026": 893.24,
+        "May 2026": 757.83,
+        "Jun 2026": 965.23,
+        "Jul 2026": 1198.15,
+        "Aug 2026": 1174.51,
+        "Total": 7285.4400000000005
+      }
+    },
+    {
+      "label": "5100 Royalty",
+      "displayName": "Royalty",
+      "accountCode": "5100",
+      "depth": 1,
+      "isSubtotal": false,
+      "section": "Cost of Goods Sold",
+      "values": {
+        "Jan 2026": 11774.32,
+        "Feb 2026": 12528.69,
+        "Mar 2026": 13124.4,
+        "Apr 2026": 11081.84,
+        "May 2026": 10319.15,
+        "Jun 2026": 13180.12,
+        "Jul 2026": 14637.19,
+        "Aug 2026": 12510.22,
+        "Total": 99155.93000000001
+      }
+    },
+    {
+      "label": "6100 Marketing",
+      "displayName": "Marketing",
+      "accountCode": "6100",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 125.0,
+        "Feb 2026": 125.0,
+        "Mar 2026": 125.0,
+        "Apr 2026": 125.0,
+        "May 2026": 125.0,
+        "Jun 2026": 125.0,
+        "Jul 2026": 125.0,
+        "Aug 2026": null,
+        "Total": 875.0
+      }
+    },
+    {
+      "label": "6102 Internet Advertising",
+      "displayName": "Internet Advertising",
+      "accountCode": "6102",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 961.65,
+        "Feb 2026": 1023.35,
+        "Mar 2026": 969.38,
+        "Apr 2026": 991.57,
+        "May 2026": 2889.63,
+        "Jun 2026": 983.14,
+        "Jul 2026": 937.91,
+        "Aug 2026": 956.8,
+        "Total": 9713.43
+      }
+    },
+    {
+      "label": "6106 Trade Shows",
+      "displayName": "Trade Shows",
+      "accountCode": "6106",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": 1002.45,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 1002.45
+      }
+    },
+    {
+      "label": "6108 Print Advertising",
+      "displayName": "Print Advertising",
+      "accountCode": "6108",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 1087.4,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": 1528.05,
+        "May 2026": null,
+        "Jun 2026": 244.2,
+        "Jul 2026": 175.95,
+        "Aug 2026": null,
+        "Total": 3035.5999999999995
+      }
+    },
+    {
+      "label": "Total for 6100 Marketing",
+      "displayName": "6100 Marketing",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 2174.05,
+        "Feb 2026": 2150.8,
+        "Mar 2026": 1094.38,
+        "Apr 2026": 2644.62,
+        "May 2026": 3014.63,
+        "Jun 2026": 1352.34,
+        "Jul 2026": 1238.86,
+        "Aug 2026": 956.8,
+        "Total": 14626.48
+      }
+    },
+    {
+      "label": "Total for 6000 Marketing and Sales",
+      "displayName": "6000 Marketing and Sales",
+      "accountCode": null,
+      "depth": 1,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 2174.05,
+        "Feb 2026": 2150.8,
+        "Mar 2026": 1094.38,
+        "Apr 2026": 2644.62,
+        "May 2026": 3014.63,
+        "Jun 2026": 1352.34,
+        "Jul 2026": 1238.86,
+        "Aug 2026": 956.8,
+        "Total": 14626.48
+      }
+    },
+    {
+      "label": "6414 Virtual Assistant",
+      "displayName": "Virtual Assistant",
+      "accountCode": "6414",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 3479.0,
+        "Feb 2026": 4119.74,
+        "Mar 2026": 3061.8,
+        "Apr 2026": 4179.38,
+        "May 2026": 5361.94,
+        "Jun 2026": 4130.42,
+        "Jul 2026": 4712.77,
+        "Aug 2026": 3301.56,
+        "Total": 32346.61
+      }
+    },
+    {
+      "label": "Total for 6410 Administrative Salary & Benefits",
+      "displayName": "6410 Administrative Salary & Benefits",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 3479.0,
+        "Feb 2026": 4119.74,
+        "Mar 2026": 3061.8,
+        "Apr 2026": 4179.38,
+        "May 2026": 5361.94,
+        "Jun 2026": 4130.42,
+        "Jul 2026": 4712.77,
+        "Aug 2026": 3301.56,
+        "Total": 32346.61
+      }
+    },
+    {
+      "label": "6421 Travel Expense",
+      "displayName": "Travel Expense",
+      "accountCode": "6421",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 140.96,
+        "Feb 2026": null,
+        "Mar 2026": 26.95,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": 60.0,
+        "Jul 2026": null,
+        "Aug 2026": 84.58,
+        "Total": 312.49
+      }
+    },
+    {
+      "label": "6422 Travel Meals",
+      "displayName": "Travel Meals",
+      "accountCode": "6422",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": 162.6,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 162.6
+      }
+    },
+    {
+      "label": "Total for 6421 Travel Expense",
+      "displayName": "6421 Travel Expense",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 140.96,
+        "Feb 2026": 0.0,
+        "Mar 2026": 26.95,
+        "Apr 2026": 0.0,
+        "May 2026": 0.0,
+        "Jun 2026": 222.6,
+        "Jul 2026": 0.0,
+        "Aug 2026": 84.58,
+        "Total": 475.09
+      }
+    },
+    {
+      "label": "6430 Bank Charges and Fees",
+      "displayName": "Bank Charges and Fees",
+      "accountCode": "6430",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 15.0,
+        "Feb 2026": 12.46,
+        "Mar 2026": 20.0,
+        "Apr 2026": 45.1,
+        "May 2026": 94.0,
+        "Jun 2026": 81.0,
+        "Jul 2026": 104.0,
+        "Aug 2026": 25.0,
+        "Total": 396.56
+      }
+    },
+    {
+      "label": "6440 Bad Debt",
+      "displayName": "Bad Debt",
+      "accountCode": "6440",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": 730.0,
+        "Apr 2026": 1246.0,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 1976.0
+      }
+    },
+    {
+      "label": "6460 Legal & Professional Fees",
+      "displayName": "Legal & Professional Fees",
+      "accountCode": "6460",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 3882.34,
+        "Feb 2026": 2500.0,
+        "Mar 2026": 3932.34,
+        "Apr 2026": 3882.34,
+        "May 2026": 2500.0,
+        "Jun 2026": 3882.34,
+        "Jul 2026": 3666.17,
+        "Aug 2026": 3882.34,
+        "Total": 28127.87
+      }
+    },
+    {
+      "label": "6461 Accounting",
+      "displayName": "Accounting",
+      "accountCode": "6461",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 750.0,
+        "Feb 2026": 375.0,
+        "Mar 2026": null,
+        "Apr 2026": 375.0,
+        "May 2026": 375.0,
+        "Jun 2026": 375.0,
+        "Jul 2026": 375.0,
+        "Aug 2026": 375.0,
+        "Total": 3000.0
+      }
+    },
+    {
+      "label": "6462 Legal",
+      "displayName": "Legal",
+      "accountCode": "6462",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": 324.0,
+        "Total": 324.0
+      }
+    },
+    {
+      "label": "Total for 6460 Legal & Professional Fees",
+      "displayName": "6460 Legal & Professional Fees",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 4632.34,
+        "Feb 2026": 2875.0,
+        "Mar 2026": 3932.34,
+        "Apr 2026": 4257.34,
+        "May 2026": 2875.0,
+        "Jun 2026": 4257.34,
+        "Jul 2026": 4041.17,
+        "Aug 2026": 4581.34,
+        "Total": 31451.87
+      }
+    },
+    {
+      "label": "6471 Office / Storage Rent",
+      "displayName": "Office / Storage Rent",
+      "accountCode": "6471",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 2500.0,
+        "Feb 2026": 2500.0,
+        "Mar 2026": 2500.0,
+        "Apr 2026": 2500.0,
+        "May 2026": 2550.0,
+        "Jun 2026": 3067.98,
+        "Jul 2026": 2806.49,
+        "Aug 2026": 2806.49,
+        "Total": 21230.96
+      }
+    },
+    {
+      "label": "6473 Office Supplies",
+      "displayName": "Office Supplies",
+      "accountCode": "6473",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 483.72,
+        "Feb 2026": 110.92,
+        "Mar 2026": 586.87,
+        "Apr 2026": 186.42,
+        "May 2026": 152.71,
+        "Jun 2026": 598.53,
+        "Jul 2026": 381.82,
+        "Aug 2026": 82.17,
+        "Total": 2583.1600000000003
+      }
+    },
+    {
+      "label": "6474 Minor Office Equipment",
+      "displayName": "Minor Office Equipment",
+      "accountCode": "6474",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": 125.75,
+        "Total": 125.75
+      }
+    },
+    {
+      "label": "6475 Communications",
+      "displayName": "Communications",
+      "accountCode": "6475",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": 306.62,
+        "Total": 306.62
+      }
+    },
+    {
+      "label": "6476 Gas, Water, Electricity, Trash",
+      "displayName": "Gas, Water, Electricity, Trash",
+      "accountCode": "6476",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 149.91,
+        "Feb 2026": 142.9,
+        "Mar 2026": 77.85,
+        "Apr 2026": 77.85,
+        "May 2026": 77.85,
+        "Jun 2026": 77.85,
+        "Jul 2026": 498.3,
+        "Aug 2026": 77.85,
+        "Total": 1180.36
+      }
+    },
+    {
+      "label": "6477 Internet Expense",
+      "displayName": "Internet Expense",
+      "accountCode": "6477",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 276.58,
+        "Feb 2026": 276.58,
+        "Mar 2026": 276.58,
+        "Apr 2026": 276.58,
+        "May 2026": 276.62,
+        "Jun 2026": 306.62,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 1689.56
+      }
+    },
+    {
+      "label": "6478 Software Fees",
+      "displayName": "Software Fees",
+      "accountCode": "6478",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 1169.87,
+        "Feb 2026": 1461.56,
+        "Mar 2026": 1666.75,
+        "Apr 2026": 2037.54,
+        "May 2026": 1339.01,
+        "Jun 2026": 1687.73,
+        "Jul 2026": 1973.7,
+        "Aug 2026": 2221.79,
+        "Total": 13557.95
+      }
+    },
+    {
+      "label": "Total for 6470 Office Expense",
+      "displayName": "6470 Office Expense",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 4580.08,
+        "Feb 2026": 4491.96,
+        "Mar 2026": 5108.049999999999,
+        "Apr 2026": 5078.389999999999,
+        "May 2026": 4396.19,
+        "Jun 2026": 5738.71,
+        "Jul 2026": 5660.31,
+        "Aug 2026": 5620.67,
+        "Total": 40674.35999999999
+      }
+    },
+    {
+      "label": "6481 Payroll Processing Fees",
+      "displayName": "Payroll Processing Fees",
+      "accountCode": "6481",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 634.21,
+        "Feb 2026": 828.24,
+        "Mar 2026": 634.81,
+        "Apr 2026": 594.92,
+        "May 2026": 962.81,
+        "Jun 2026": 934.94,
+        "Jul 2026": 1225.16,
+        "Aug 2026": 616.95,
+        "Total": 6432.04
+      }
+    },
+    {
+      "label": "6492 Education & Training",
+      "displayName": "Education & Training",
+      "accountCode": "6492",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": 1041.0,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 1041.0
+      }
+    },
+    {
+      "label": "6,493.10 Technician Uniforms",
+      "displayName": "6,493.10 Technician Uniforms",
+      "accountCode": null,
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 1513.99,
+        "Feb 2026": 1402.64,
+        "Mar 2026": 954.91,
+        "Apr 2026": 2659.62,
+        "May 2026": null,
+        "Jun 2026": 1280.15,
+        "Jul 2026": 1060.68,
+        "Aug 2026": 2955.87,
+        "Total": 11827.86
+      }
+    },
+    {
+      "label": "Total for 6493 Uniforms & Logoed Apparel",
+      "displayName": "6493 Uniforms & Logoed Apparel",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 1513.99,
+        "Feb 2026": 1402.64,
+        "Mar 2026": 954.91,
+        "Apr 2026": 2659.62,
+        "May 2026": 0.0,
+        "Jun 2026": 1280.15,
+        "Jul 2026": 1060.68,
+        "Aug 2026": 2955.87,
+        "Total": 11827.86
+      }
+    },
+    {
+      "label": "6496 Employee Morale",
+      "displayName": "Employee Morale",
+      "accountCode": "6496",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": 983.5,
+        "Jun 2026": 807.0,
+        "Jul 2026": null,
+        "Aug 2026": 1075.0,
+        "Total": 2865.5
+      }
+    },
+    {
+      "label": "Total for 6490 Employee Related Expenses",
+      "displayName": "6490 Employee Related Expenses",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 1513.99,
+        "Feb 2026": 1402.64,
+        "Mar 2026": 954.91,
+        "Apr 2026": 3700.62,
+        "May 2026": 983.5,
+        "Jun 2026": 2087.15,
+        "Jul 2026": 1060.68,
+        "Aug 2026": 4030.87,
+        "Total": 15734.36
+      }
+    },
+    {
+      "label": "6501 Vehicle Lease",
+      "displayName": "Vehicle Lease",
+      "accountCode": "6501",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 303.3,
+        "Feb 2026": 303.3,
+        "Mar 2026": 303.3,
+        "Apr 2026": 303.3,
+        "May 2026": 303.3,
+        "Jun 2026": 303.3,
+        "Jul 2026": 303.3,
+        "Aug 2026": 303.3,
+        "Total": 2426.4
+      }
+    },
+    {
+      "label": "6502 Vehicle Fuel",
+      "displayName": "Vehicle Fuel",
+      "accountCode": "6502",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": 154.79,
+        "Mar 2026": null,
+        "Apr 2026": 96.1,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": 2.21,
+        "Aug 2026": 374.51,
+        "Total": 627.61
+      }
+    },
+    {
+      "label": "6503 Vehicle Insurance",
+      "displayName": "Vehicle Insurance",
+      "accountCode": "6503",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 1880.6,
+        "Feb 2026": 1933.22,
+        "Mar 2026": 1933.22,
+        "Apr 2026": 1933.22,
+        "May 2026": 2236.63,
+        "Jun 2026": 2236.63,
+        "Jul 2026": 964.3,
+        "Aug 2026": 964.29,
+        "Total": 14082.11
+      }
+    },
+    {
+      "label": "6504 Vehicle Repairs & Maintenance",
+      "displayName": "Vehicle Repairs & Maintenance",
+      "accountCode": "6504",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 2437.31,
+        "Feb 2026": 4481.42,
+        "Mar 2026": 1177.87,
+        "Apr 2026": 8174.11,
+        "May 2026": 11367.52,
+        "Jun 2026": 5656.51,
+        "Jul 2026": 8484.31,
+        "Aug 2026": 3721.53,
+        "Total": 45500.579999999994
+      }
+    },
+    {
+      "label": "Total for 6500 Vehicle Expenses",
+      "displayName": "6500 Vehicle Expenses",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 4621.21,
+        "Feb 2026": 6872.73,
+        "Mar 2026": 3414.39,
+        "Apr 2026": 10506.73,
+        "May 2026": 13907.45,
+        "Jun 2026": 8196.44,
+        "Jul 2026": 9754.119999999999,
+        "Aug 2026": 5363.63,
+        "Total": 62636.69999999999
+      }
+    },
+    {
+      "label": "6511 General Liability",
+      "displayName": "General Liability",
+      "accountCode": "6511",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 5808.42,
+        "Feb 2026": 1246.12,
+        "Mar 2026": 1246.12,
+        "Apr 2026": 1246.12,
+        "May 2026": 1282.7,
+        "Jun 2026": 1246.12,
+        "Jul 2026": 1246.12,
+        "Aug 2026": null,
+        "Total": 13321.719999999998
+      }
+    },
+    {
+      "label": "6515 Workers Comp",
+      "displayName": "Workers Comp",
+      "accountCode": "6515",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 5741.15,
+        "Feb 2026": 206.15,
+        "Mar 2026": 1157.65,
+        "Apr 2026": 1080.65,
+        "May 2026": 1080.65,
+        "Jun 2026": 1080.65,
+        "Jul 2026": 1080.65,
+        "Aug 2026": 1080.65,
+        "Total": 12508.199999999997
+      }
+    },
+    {
+      "label": "Total for 6510 Insurance",
+      "displayName": "6510 Insurance",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 11549.57,
+        "Feb 2026": 1452.27,
+        "Mar 2026": 2403.77,
+        "Apr 2026": 2326.77,
+        "May 2026": 2363.3500000000004,
+        "Jun 2026": 2326.77,
+        "Jul 2026": 2326.77,
+        "Aug 2026": 1080.65,
+        "Total": 25829.920000000006
+      }
+    },
+    {
+      "label": "6533 Licenses and Permits",
+      "displayName": "Licenses and Permits",
+      "accountCode": "6533",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 1623.58,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": 51.45,
+        "Jun 2026": 85.7,
+        "Jul 2026": 100.24,
+        "Aug 2026": null,
+        "Total": 1860.97
+      }
+    },
+    {
+      "label": "6534 Property Tax",
+      "displayName": "Property Tax",
+      "accountCode": "6534",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 1515.24,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": null,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 1515.24
+      }
+    },
+    {
+      "label": "Total for 6530 Business Taxes & Licenses",
+      "displayName": "6530 Business Taxes & Licenses",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 3138.8199999999997,
+        "Feb 2026": 0.0,
+        "Mar 2026": 0.0,
+        "Apr 2026": 0.0,
+        "May 2026": 51.45,
+        "Jun 2026": 85.7,
+        "Jul 2026": 100.24,
+        "Aug 2026": 0.0,
+        "Total": 3376.209999999999
+      }
+    },
+    {
+      "label": "6540 Dues & Subscriptions",
+      "displayName": "Dues & Subscriptions",
+      "accountCode": "6540",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 19.99,
+        "Feb 2026": 19.99,
+        "Mar 2026": 129.94,
+        "Apr 2026": 19.99,
+        "May 2026": 19.99,
+        "Jun 2026": 19.99,
+        "Jul 2026": 19.99,
+        "Aug 2026": 19.99,
+        "Total": 269.87
+      }
+    },
+    {
+      "label": "6550 Tools & Equipment",
+      "displayName": "Tools & Equipment",
+      "accountCode": "6550",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 73.8,
+        "Feb 2026": -57.59,
+        "Mar 2026": 1.08,
+        "Apr 2026": null,
+        "May 2026": 8897.9,
+        "Jun 2026": 57.61,
+        "Jul 2026": 87.51,
+        "Aug 2026": null,
+        "Total": 9060.310000000001
+      }
+    },
+    {
+      "label": "Total for 6400 General & Administrative",
+      "displayName": "6400 General & Administrative",
+      "accountCode": null,
+      "depth": 1,
+      "isSubtotal": true,
+      "section": "Expenses",
+      "values": {
+        "Jan 2026": 34398.97,
+        "Feb 2026": 22017.44,
+        "Mar 2026": 20418.04,
+        "Apr 2026": 31955.24,
+        "May 2026": 39913.58,
+        "Jun 2026": 28138.670000000002,
+        "Jul 2026": 29092.72,
+        "Aug 2026": 24725.240000000005,
+        "Total": 230659.90000000002
+      }
+    },
+    {
+      "label": "7010 Interest Income",
+      "displayName": "Interest Income",
+      "accountCode": "7010",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Other Income",
+      "values": {
+        "Jan 2026": 27.59,
+        "Feb 2026": 14.9,
+        "Mar 2026": 15.02,
+        "Apr 2026": 16.98,
+        "May 2026": 17.14,
+        "Jun 2026": 12.38,
+        "Jul 2026": 6.64,
+        "Aug 2026": 7.48,
+        "Total": 118.13000000000001
+      }
+    },
+    {
+      "label": "7040 Insurance Payout",
+      "displayName": "Insurance Payout",
+      "accountCode": "7040",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Other Income",
+      "values": {
+        "Jan 2026": null,
+        "Feb 2026": null,
+        "Mar 2026": null,
+        "Apr 2026": 11613.05,
+        "May 2026": null,
+        "Jun 2026": null,
+        "Jul 2026": null,
+        "Aug 2026": null,
+        "Total": 11613.05
+      }
+    },
+    {
+      "label": "Total for 7000 Other Income",
+      "displayName": "7000 Other Income",
+      "accountCode": null,
+      "depth": 1,
+      "isSubtotal": true,
+      "section": "Other Income",
+      "values": {
+        "Jan 2026": 27.59,
+        "Feb 2026": 14.9,
+        "Mar 2026": 15.02,
+        "Apr 2026": 11630.029999999999,
+        "May 2026": 17.14,
+        "Jun 2026": 12.38,
+        "Jul 2026": 6.64,
+        "Aug 2026": 7.48,
+        "Total": 11731.179999999997
+      }
+    },
+    {
+      "label": "8011 Owner Wages",
+      "displayName": "Owner Wages",
+      "accountCode": "8011",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Other Expenses",
+      "values": {
+        "Jan 2026": 8461.54,
+        "Feb 2026": 8461.54,
+        "Mar 2026": 8658.91,
+        "Apr 2026": 8390.88,
+        "May 2026": 8461.54,
+        "Jun 2026": 9061.54,
+        "Jul 2026": 13817.31,
+        "Aug 2026": 7261.54,
+        "Total": 72574.8
+      }
+    },
+    {
+      "label": "8012 Owner Payroll Taxes",
+      "displayName": "Owner Payroll Taxes",
+      "accountCode": "8012",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Other Expenses",
+      "values": {
+        "Jan 2026": 637.69,
+        "Feb 2026": 601.42,
+        "Mar 2026": 601.42,
+        "Apr 2026": 601.42,
+        "May 2026": 601.42,
+        "Jun 2026": 601.42,
+        "Jul 2026": 902.13,
+        "Aug 2026": 509.62,
+        "Total": 5056.54
+      }
+    },
+    {
+      "label": "8013 Owner Insurance",
+      "displayName": "Owner Insurance",
+      "accountCode": "8013",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Other Expenses",
+      "values": {
+        "Jan 2026": 36.58,
+        "Feb 2026": 36.58,
+        "Mar 2026": 36.58,
+        "Apr 2026": 36.58,
+        "May 2026": null,
+        "Jun 2026": 36.58,
+        "Jul 2026": 36.58,
+        "Aug 2026": 36.58,
+        "Total": 256.05999999999995
+      }
+    },
+    {
+      "label": "Total for 8010 Owner Payroll",
+      "displayName": "8010 Owner Payroll",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Other Expenses",
+      "values": {
+        "Jan 2026": 9135.810000000001,
+        "Feb 2026": 9099.54,
+        "Mar 2026": 9296.91,
+        "Apr 2026": 9028.88,
+        "May 2026": 9062.960000000001,
+        "Jun 2026": 9699.54,
+        "Jul 2026": 14756.019999999999,
+        "Aug 2026": 7807.74,
+        "Total": 77887.40000000001
+      }
+    },
+    {
+      "label": "8030 Interest Expense",
+      "displayName": "Interest Expense",
+      "accountCode": "8030",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Other Expenses",
+      "values": {
+        "Jan 2026": 14530.07,
+        "Feb 2026": 13977.29,
+        "Mar 2026": 12884.88,
+        "Apr 2026": 13967.89,
+        "May 2026": 13362.33,
+        "Jun 2026": 14294.16,
+        "Jul 2026": 13665.06,
+        "Aug 2026": 13647.96,
+        "Total": 110329.63999999998
+      }
+    },
+    {
+      "label": "Total for 8000 Other Expense",
+      "displayName": "8000 Other Expense",
+      "accountCode": null,
+      "depth": 1,
+      "isSubtotal": true,
+      "section": "Other Expenses",
+      "values": {
+        "Jan 2026": 23665.88,
+        "Feb 2026": 23076.83,
+        "Mar 2026": 22181.79,
+        "Apr 2026": 22996.769999999997,
+        "May 2026": 22425.29,
+        "Jun 2026": 23993.7,
+        "Jul 2026": 28421.079999999998,
+        "Aug 2026": 21455.699999999997,
+        "Total": 188217.03999999998
+      }
+    }
+  ],
+  "summary": {
+    "totalIncome": {
+      "Jan 2026": 136466.67,
+      "Feb 2026": 128210.89,
+      "Mar 2026": 129360.48999999999,
+      "Apr 2026": 114369.29,
+      "May 2026": 127541.58,
+      "Jun 2026": 142032.24,
+      "Jul 2026": 167453.48,
+      "Aug 2026": 158468.27000000002,
+      "Total": 1103902.91
+    },
+    "costOfGoodsSold": {
+      "Jan 2026": 74178.31,
+      "Feb 2026": 68267.75,
+      "Mar 2026": 77973.33,
+      "Apr 2026": 67195.87000000001,
+      "May 2026": 62254.67,
+      "Jun 2026": 82548.79,
+      "Jul 2026": 128244.99999999999,
+      "Aug 2026": 89351.12,
+      "Total": 650014.84
+    },
+    "grossProfit": {
+      "Jan 2026": 62288.360000000015,
+      "Feb 2026": 59943.14,
+      "Mar 2026": 51387.15999999999,
+      "Apr 2026": 47173.419999999984,
+      "May 2026": 65286.91,
+      "Jun 2026": 59483.45,
+      "Jul 2026": 39208.480000000025,
+      "Aug 2026": 69117.15000000002,
+      "Total": 453888.07000000007
+    },
+    "totalExpenses": {
+      "Jan 2026": 36573.020000000004,
+      "Feb 2026": 24168.239999999998,
+      "Mar 2026": 21512.420000000002,
+      "Apr 2026": 34599.86,
+      "May 2026": 42928.21,
+      "Jun 2026": 29491.010000000002,
+      "Jul 2026": 30331.58,
+      "Aug 2026": 25682.040000000005,
+      "Total": 245286.38000000003
+    },
+    "netOperatingIncome": {
+      "Jan 2026": 25715.34000000001,
+      "Feb 2026": 35774.9,
+      "Mar 2026": 29874.739999999987,
+      "Apr 2026": 12573.559999999983,
+      "May 2026": 22358.700000000004,
+      "Jun 2026": 29992.439999999995,
+      "Jul 2026": 8876.900000000023,
+      "Aug 2026": 43435.110000000015,
+      "Total": 208601.69000000003
+    },
+    "otherIncome": {
+      "Jan 2026": 27.59,
+      "Feb 2026": 14.9,
+      "Mar 2026": 15.02,
+      "Apr 2026": 11630.029999999999,
+      "May 2026": 17.14,
+      "Jun 2026": 12.38,
+      "Jul 2026": 6.64,
+      "Aug 2026": 7.48,
+      "Total": 11731.179999999997
+    },
+    "otherExpenses": {
+      "Jan 2026": 23665.88,
+      "Feb 2026": 23076.83,
+      "Mar 2026": 22181.79,
+      "Apr 2026": 22996.769999999997,
+      "May 2026": 22425.29,
+      "Jun 2026": 23993.7,
+      "Jul 2026": 28421.079999999998,
+      "Aug 2026": 21455.699999999997,
+      "Total": 188217.03999999998
+    },
+    "netOtherIncome": {
+      "Jan 2026": -23638.29,
+      "Feb 2026": -23061.93,
+      "Mar 2026": -22166.77,
+      "Apr 2026": -11366.739999999998,
+      "May 2026": -22408.15,
+      "Jun 2026": -23981.32,
+      "Jul 2026": -28414.44,
+      "Aug 2026": -21448.219999999998,
+      "Total": -176485.86000000002
+    },
+    "netIncome": {
+      "Jan 2026": 2077.05000000001,
+      "Feb 2026": 12712.970000000001,
+      "Mar 2026": 7707.969999999987,
+      "Apr 2026": 1206.8199999999852,
+      "May 2026": -49.44999999999709,
+      "Jun 2026": 6011.119999999995,
+      "Jul 2026": -19537.539999999975,
+      "Aug 2026": 21986.890000000018,
+      "Total": 32115.830000000024
+    }
+  },
+  "sourceFile": "2026-08_profit-and-loss_monthly_accrual.xlsx",
+  "importedAt": "2026-09-16T13:57:54.491764Z"
+}

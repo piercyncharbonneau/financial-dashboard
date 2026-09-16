@@ -1,0 +1,735 @@
+{
+  "company": "Hoodz of Kansas City",
+  "reportName": "Balance Sheet",
+  "periodLabel": "As of Aug 31, 2026",
+  "basis": "accrual",
+  "periods": [
+    "Total"
+  ],
+  "rows": [
+    {
+      "label": "1000 Chase Checking",
+      "displayName": "Chase Checking",
+      "accountCode": "1000",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": -27.32
+      }
+    },
+    {
+      "label": "1001 Future CAPEX - Trucks & Equipment",
+      "displayName": "Future CAPEX - Trucks & Equipment",
+      "accountCode": "1001",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 0
+      }
+    },
+    {
+      "label": "1002 Income",
+      "displayName": "Income",
+      "accountCode": "1002",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 22619.14
+      }
+    },
+    {
+      "label": "1003 Lance's Note",
+      "displayName": "Lance's Note",
+      "accountCode": "1003",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 9804.95
+      }
+    },
+    {
+      "label": "1004 OPEX",
+      "displayName": "OPEX",
+      "accountCode": "1004",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 988.08
+      }
+    },
+    {
+      "label": "1005 Owner Distributions",
+      "displayName": "Owner Distributions",
+      "accountCode": "1005",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 4000.0
+      }
+    },
+    {
+      "label": "1006 Profit and Cash Buffer",
+      "displayName": "Profit and Cash Buffer",
+      "accountCode": "1006",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 1371.06
+      }
+    },
+    {
+      "label": "1007 Royalties",
+      "displayName": "Royalties",
+      "accountCode": "1007",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 7387.09
+      }
+    },
+    {
+      "label": "1008 Salaries and Wages",
+      "displayName": "Salaries and Wages",
+      "accountCode": "1008",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 5843.22
+      }
+    },
+    {
+      "label": "1010 Petty Cash",
+      "displayName": "Petty Cash",
+      "accountCode": "1010",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 0
+      }
+    },
+    {
+      "label": "1011 SBA",
+      "displayName": "SBA",
+      "accountCode": "1011",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 10999.56
+      }
+    },
+    {
+      "label": "1012 CC Payment Account",
+      "displayName": "CC Payment Account",
+      "accountCode": "1012",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 822.63
+      }
+    },
+    {
+      "label": "1029 Sales Clearing",
+      "displayName": "Sales Clearing",
+      "accountCode": "1029",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 0
+      }
+    },
+    {
+      "label": "Total for Bank Accounts",
+      "displayName": "Bank Accounts",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Assets",
+      "values": {
+        "Total": 63808.409999999996
+      }
+    },
+    {
+      "label": "1050 Accounts Receivable",
+      "displayName": "Accounts Receivable",
+      "accountCode": "1050",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 155223.82
+      }
+    },
+    {
+      "label": "Total for Accounts Receivable",
+      "displayName": "Accounts Receivable",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Assets",
+      "values": {
+        "Total": 155223.82
+      }
+    },
+    {
+      "label": "1125 Security Deposits",
+      "displayName": "Security Deposits",
+      "accountCode": "1125",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 2500.0
+      }
+    },
+    {
+      "label": "1150 Undeposited Funds",
+      "displayName": "Undeposited Funds",
+      "accountCode": "1150",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 0
+      }
+    },
+    {
+      "label": "1155 Uncategorized Asset",
+      "displayName": "Uncategorized Asset",
+      "accountCode": "1155",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 0
+      }
+    },
+    {
+      "label": "Total for Other Current Assets",
+      "displayName": "Other Current Assets",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Assets",
+      "values": {
+        "Total": 2500.0
+      }
+    },
+    {
+      "label": "1200 Equipment",
+      "displayName": "Equipment",
+      "accountCode": "1200",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 20680.0
+      }
+    },
+    {
+      "label": "1202 Equipment Accum Depreciation",
+      "displayName": "Equipment Accum Depreciation",
+      "accountCode": "1202",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": -5056.0
+      }
+    },
+    {
+      "label": "Total for 1200 Equipment",
+      "displayName": "1200 Equipment",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Assets",
+      "values": {
+        "Total": 15624.0
+      }
+    },
+    {
+      "label": "1250 Vehicles",
+      "displayName": "Vehicles",
+      "accountCode": "1250",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 152905.0
+      }
+    },
+    {
+      "label": "1252 Vehicles Accum Depreciation",
+      "displayName": "Vehicles Accum Depreciation",
+      "accountCode": "1252",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": -132820.0
+      }
+    },
+    {
+      "label": "1253 Vehicle Lease Down Payment",
+      "displayName": "Vehicle Lease Down Payment",
+      "accountCode": "1253",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 2722.22
+      }
+    },
+    {
+      "label": "Original cost",
+      "displayName": "Original cost",
+      "accountCode": null,
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 219.94
+      }
+    },
+    {
+      "label": "Total for 1253 Vehicle Lease Down Payment",
+      "displayName": "1253 Vehicle Lease Down Payment",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Assets",
+      "values": {
+        "Total": 2942.16
+      }
+    },
+    {
+      "label": "Total for 1250 Vehicles",
+      "displayName": "1250 Vehicles",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Assets",
+      "values": {
+        "Total": 23027.16
+      }
+    },
+    {
+      "label": "1501 Franchise Fee Accum Amort",
+      "displayName": "Franchise Fee Accum Amort",
+      "accountCode": "1501",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": -63111.0
+      }
+    },
+    {
+      "label": "1502 Franchise Fee Original Cost",
+      "displayName": "Franchise Fee Original Cost",
+      "accountCode": "1502",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 710000.0
+      }
+    },
+    {
+      "label": "1503 Business Acquisition",
+      "displayName": "Business Acquisition",
+      "accountCode": "1503",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 0
+      }
+    },
+    {
+      "label": "Total for 1500 Franchise Fee",
+      "displayName": "1500 Franchise Fee",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Assets",
+      "values": {
+        "Total": 646889.0
+      }
+    },
+    {
+      "label": "1600 Start-Up Costs",
+      "displayName": "Start-Up Costs",
+      "accountCode": "1600",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 7000.0
+      }
+    },
+    {
+      "label": "1601 Start-Up Costs Original Costs",
+      "displayName": "Start-Up Costs Original Costs",
+      "accountCode": "1601",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 39635.5
+      }
+    },
+    {
+      "label": "1602 Start-Up Costs Accum Amort",
+      "displayName": "Start-Up Costs Accum Amort",
+      "accountCode": "1602",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": -6906.0
+      }
+    },
+    {
+      "label": "Total for 1600 Start-Up Costs",
+      "displayName": "1600 Start-Up Costs",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Assets",
+      "values": {
+        "Total": 39729.5
+      }
+    },
+    {
+      "label": "1700 Goodwill",
+      "displayName": "Goodwill",
+      "accountCode": "1700",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": 706615.0
+      }
+    },
+    {
+      "label": "1701 Accumulated Amortization Goodwill",
+      "displayName": "Accumulated Amortization Goodwill",
+      "accountCode": "1701",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Assets",
+      "values": {
+        "Total": -31405.0
+      }
+    },
+    {
+      "label": "2050 Accounts Payable",
+      "displayName": "Accounts Payable",
+      "accountCode": "2050",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 0
+      }
+    },
+    {
+      "label": "Total for Accounts Payable",
+      "displayName": "Accounts Payable",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 0.0
+      }
+    },
+    {
+      "label": "2000 Amex Credit Card x1005",
+      "displayName": "Amex Credit Card x1005",
+      "accountCode": "2000",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 86228.9
+      }
+    },
+    {
+      "label": "Total for Credit Cards",
+      "displayName": "Credit Cards",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 86228.9
+      }
+    },
+    {
+      "label": "2100 Payroll Liabilities",
+      "displayName": "Payroll Liabilities",
+      "accountCode": "2100",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 652.63
+      }
+    },
+    {
+      "label": "Total for Other Current Liabilities",
+      "displayName": "Other Current Liabilities",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 652.63
+      }
+    },
+    {
+      "label": "2250 SBA Loan",
+      "displayName": "SBA Loan",
+      "accountCode": "2250",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 705915.76
+      }
+    },
+    {
+      "label": "2251 SBA Loan Payable",
+      "displayName": "SBA Loan Payable",
+      "accountCode": "2251",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": -28789.38
+      }
+    },
+    {
+      "label": "Total for 2250 SBA Loan",
+      "displayName": "2250 SBA Loan",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 677126.38
+      }
+    },
+    {
+      "label": "2402 Loan from Charbonneau",
+      "displayName": "Loan from Charbonneau",
+      "accountCode": "2402",
+      "depth": 4,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 32738.93
+      }
+    },
+    {
+      "label": "2402.1 Accrued Interest (Charbonneau)",
+      "displayName": "Accrued Interest (Charbonneau)",
+      "accountCode": "2402.1",
+      "depth": 5,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 566.18
+      }
+    },
+    {
+      "label": "Total for 2402 Loan from Charbonneau",
+      "displayName": "2402 Loan from Charbonneau",
+      "accountCode": null,
+      "depth": 4,
+      "isSubtotal": true,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 33305.11
+      }
+    },
+    {
+      "label": "Total for 2300 Owner Loan Payable",
+      "displayName": "2300 Owner Loan Payable",
+      "accountCode": null,
+      "depth": 3,
+      "isSubtotal": true,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 33305.11
+      }
+    },
+    {
+      "label": "2325 Promissory Note",
+      "displayName": "Promissory Note",
+      "accountCode": "2325",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 772596.01
+      }
+    },
+    {
+      "label": "3010 Owner's Investment",
+      "displayName": "Owner's Investment",
+      "accountCode": "3010",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 0
+      }
+    },
+    {
+      "label": "3001 Charbonneau Capital",
+      "displayName": "Charbonneau Capital",
+      "accountCode": "3001",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": -116817.42
+      }
+    },
+    {
+      "label": "3002 Luebben Capital",
+      "displayName": "Luebben Capital",
+      "accountCode": "3002",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 141156.77
+      }
+    },
+    {
+      "label": "3002.1 Brian Luebben Owner Draw",
+      "displayName": "Brian Luebben Owner Draw",
+      "accountCode": "3002.1",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": -91900.0
+      }
+    },
+    {
+      "label": "3003 Sentry Ventures, LLC Capital",
+      "displayName": "Sentry Ventures, LLC Capital",
+      "accountCode": "3003",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 18128.38
+      }
+    },
+    {
+      "label": "3004 Carroll Capital",
+      "displayName": "Carroll Capital",
+      "accountCode": "3004",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 45000.0
+      }
+    },
+    {
+      "label": "3005 Giblin Capital",
+      "displayName": "Giblin Capital",
+      "accountCode": "3005",
+      "depth": 3,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 45000.0
+      }
+    },
+    {
+      "label": "Total for 3010 Owner's Investment",
+      "displayName": "3010 Owner's Investment",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": true,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 40567.729999999996
+      }
+    },
+    {
+      "label": "3100 Retained Earnings",
+      "displayName": "Retained Earnings",
+      "accountCode": "3100",
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": -20580.699999999895
+      }
+    },
+    {
+      "label": "Net Income",
+      "displayName": "Net Income",
+      "accountCode": null,
+      "depth": 2,
+      "isSubtotal": false,
+      "section": "Liabilities and Equity",
+      "values": {
+        "Total": 32115.830000000118
+      }
+    }
+  ],
+  "summary": {
+    "totalCurrentAssets": {
+      "Total": 221532.23
+    },
+    "totalFixedAssets": {
+      "Total": 38651.16
+    },
+    "totalOtherAssets": {
+      "Total": 1361828.5
+    },
+    "totalAssets": {
+      "Total": 1622011.8900000001
+    },
+    "totalCurrentLiabilities": {
+      "Total": 86881.53
+    },
+    "totalLongTermLiabilities": {
+      "Total": 1483027.5
+    },
+    "totalLiabilities": {
+      "Total": 1569909.03
+    },
+    "totalEquity": {
+      "Total": 52102.86000000022
+    },
+    "totalLiabilitiesAndEquity": {
+      "Total": 1622011.8900000001
+    }
+  },
+  "sourceFile": "2026-08_balance-sheet_accrual.xlsx",
+  "importedAt": "2026-09-16T13:57:54.466736Z"
+}

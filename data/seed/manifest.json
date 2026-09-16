@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2026-08_balance-sheet_accrual",
+    "reportType": "balance-sheet",
+    "granularity": null,
+    "basis": "accrual",
+    "period": "2026-08",
+    "file": "2026-08_balance-sheet_accrual.json"
+  },
+  {
+    "id": "2026-08_profit-and-loss_monthly_accrual",
+    "reportType": "profit-and-loss",
+    "granularity": "monthly",
+    "basis": "accrual",
+    "period": "2026-08",
+    "file": "2026-08_profit-and-loss_monthly_accrual.json"
+  },
+  {
+    "id": "2026-08_profit-and-loss_monthly_cash",
+    "reportType": "profit-and-loss",
+    "granularity": "monthly",
+    "basis": "cash",
+    "period": "2026-08",
+    "file": "2026-08_profit-and-loss_monthly_cash.json"
+  },
+  {
+    "id": "2026-08_profit-and-loss_weekly_accrual",
+    "reportType": "profit-and-loss",
+    "granularity": "weekly",
+    "basis": "accrual",
+    "period": "2026-08",
+    "file": "2026-08_profit-and-loss_weekly_accrual.json"
+  },
+  {
+    "id": "2026-08_profit-and-loss_weekly_cash",
+    "reportType": "profit-and-loss",
+    "granularity": "weekly",
+    "basis": "cash",
+    "period": "2026-08",
+    "file": "2026-08_profit-and-loss_weekly_cash.json"
+  }
+]
