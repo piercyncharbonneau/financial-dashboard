@@ -129,13 +129,33 @@ export default function IntegrationsPage() {
         />
 
         <IntegrationCard
-          title="Google Docs / Sheets"
-          description="Pull in sales tracker, scheduling, and expense sheets your team already maintains."
+          title="Sales Team Performance Tracker"
+          description="Commission tracker: signed accounts, ARR added, closer/rep commissions. Snapshotted from the Google Sheet — see the Sales page."
+          status="connected"
+          needFromUser={[
+            "Nothing to unblock this one — it's imported and live on the Sales page",
+            "For a real-time connection instead of periodic snapshots: share the sheet with a Google service account (see README)",
+            "Say the word whenever you want it refreshed, or ask me to re-pull it",
+          ]}
+        />
+
+        <IntegrationCard
+          title="Hoodz Master Schedule"
+          description="Per-truck daily job schedule. Free-form calendar layout, not a clean table — deprioritized in favor of ServiceBridge if it has an API."
           status="planned"
           needFromUser={[
-            "Share (view access is enough) the specific Sheets/Docs to pull from",
-            "A Google Cloud service account with access, or OAuth consent for a shared Google Workspace account",
-            "Which columns/fields are the source of truth so we map them correctly",
+            "Confirm whether you still want this parsed by hand, or would rather wait for ServiceBridge",
+            "If parsing by hand: which fields matter (job, truck, time, completion status) so I can define a schema for the free-form layout",
+          ]}
+        />
+
+        <IntegrationCard
+          title="Inventory & Fleet Tracking"
+          description="Truck maintenance/repair log and per-vehicle cost totals (mileage, service due dates, maintenance/repair/purchase cost)."
+          status="planned"
+          needFromUser={[
+            "Confirm you want this one built next (it's reasonably tabular, similar effort to the sales tracker)",
+            "For a live connection: share the sheet with a Google service account (see README)",
           ]}
         />
       </div>

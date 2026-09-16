@@ -8,6 +8,7 @@ const links = [
   { href: "/", label: "Overview" },
   { href: "/income-statement", label: "Income Statement" },
   { href: "/balance-sheet", label: "Balance Sheet" },
+  { href: "/sales", label: "Sales" },
   { href: "/integrations", label: "Integrations" },
 ];
 
