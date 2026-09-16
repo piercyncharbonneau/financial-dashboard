@@ -6,6 +6,7 @@ import clsx from "clsx";
 
 const links = [
   { href: "/", label: "Overview" },
+  { href: "/forecast", label: "2026 Forecast" },
   { href: "/income-statement", label: "Income Statement" },
   { href: "/balance-sheet", label: "Balance Sheet" },
   { href: "/sales", label: "Sales" },

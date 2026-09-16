@@ -84,6 +84,34 @@ Nobody has built this route yet.
 The Master Schedule and Inventory & Fleet Tracking sheets are not wired up
 yet — see the Integrations page for what's blocking each one.
 
+### 2026 full-year forecast
+
+The Forecast page (`src/app/forecast/`, logic in `src/lib/data/forecast.ts`)
+blends actuals with a simple, explicit model rather than anything
+statistical — there's only 8 months of monthly data so far, not enough to
+fit a real seasonal curve:
+
+- **Baseline** — trailing 3-month average of actual revenue, held flat for
+  the remaining months of the year.
+- **Pipeline uplift** — for each remaining month, adds ARR/12 from Sales
+  Tracker deals whose first-service date falls after the last actual P&L
+  month. Only deals starting *after* the actuals cutoff count, so revenue
+  already baked into the historical run-rate is never double-counted.
+- **COGS** — forecast at the YTD aggregate ratio (sum of COGS / sum of
+  revenue) applied to forecast revenue, since it's substantially
+  labor/materials and scales with volume.
+- **Operating expenses** — forecast flat at the YTD monthly average, since
+  G&A and salaries are largely fixed rather than revenue-scaled.
+- Deals that are signed but don't have a first-service date yet aren't
+  placed in any month — they're surfaced separately as unscheduled
+  pipeline so nothing is silently dropped, but nothing is guessed either.
+
+The full methodology (with the actual numbers behind each figure) is
+rendered on the page itself. This is a first pass — worth revisiting once
+there's a second year of monthly data to detect real seasonality, and once
+QuickBooks/ServiceBridge are live so the baseline updates itself instead of
+needing a manual re-import.
+
 ## Architecture
 
 ```
@@ -93,13 +121,14 @@ src/
     income-statement/        Full P&L, monthly/weekly x accrual/cash toggle
     balance-sheet/           Full balance sheet + liquidity KPIs
     sales/                   Sales tracker: KPIs, ARR trend, by category/closer
+    forecast/                2026 full-year forecast: actuals + run-rate + sales pipeline
     integrations/            Connection status + what's needed for each data source
     sign-in/                 Google sign-in
     api/auth/[...nextauth]/  NextAuth route handler
     api/integrations/quickbooks/   QuickBooks OAuth connect/callback routes
   components/                 Presentational components (KpiCard, PLTable, nav, charts/)
   lib/
-    data/                     Report loading + derived metrics (reports.ts, metrics.ts, salesTracker.ts, salesMetrics.ts, types.ts)
+    data/                     Report loading + derived metrics (reports.ts, metrics.ts, salesTracker.ts, salesMetrics.ts, forecast.ts, types.ts)
     qbo/                      QuickBooks OAuth client + token storage (client.ts, tokenStore.ts)
   auth.ts                     NextAuth config (Google provider, allowlist)
   proxy.ts                    Route protection (Next.js's replacement for middleware.ts)
