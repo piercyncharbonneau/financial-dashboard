@@ -7,7 +7,7 @@ export async function GET(req: NextRequest) {
   try {
     await client.createToken(req.url);
     const realmId = new URL(req.url).searchParams.get("realmId") ?? "";
-    persistTokenFromClient(client, realmId);
+    await persistTokenFromClient(client, realmId);
     return NextResponse.redirect(new URL("/integrations?qbo=connected", req.url));
   } catch (err) {
     console.error("QuickBooks OAuth callback failed", err);

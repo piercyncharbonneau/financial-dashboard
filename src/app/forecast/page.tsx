@@ -1,14 +1,16 @@
-import { getLatestProfitAndLoss } from "@/lib/data/reports";
+import { getLatestBalanceSheet, getLatestProfitAndLoss } from "@/lib/data/reports";
 import { getSalesTracker } from "@/lib/data/salesTracker";
 import { buildForecast } from "@/lib/data/forecast";
 import { formatCurrency, formatPercent } from "@/lib/data/metrics";
 import { KpiCard } from "@/components/KpiCard";
 import { ActualVsForecastChart } from "@/components/charts/ActualVsForecastChart";
 
-export default function ForecastPage() {
-  const pl = getLatestProfitAndLoss("monthly", "accrual");
+export default async function ForecastPage() {
+  const plAccrual = await getLatestProfitAndLoss("monthly", "accrual");
+  const plCash = await getLatestProfitAndLoss("monthly", "cash");
+  const balanceSheet = getLatestBalanceSheet("accrual");
   const sales = getSalesTracker();
-  const forecast = buildForecast(pl, sales);
+  const forecast = buildForecast(plAccrual, plCash, balanceSheet, sales);
 
   const revenueSeries = forecast.months.map((m) => ({
     period: m.period,
@@ -50,9 +52,9 @@ export default function ForecastPage() {
           subtext={`Through ${forecast.ytdActual.lastActualPeriod}`}
         />
         <KpiCard
-          label="Pipeline Contribution"
-          value={formatCurrency(forecast.fullYear.pipelineContribution)}
-          subtext="Incremental revenue from new sales-tracker deals"
+          label="Assumed New Business (Sep-Dec)"
+          value={formatCurrency(forecast.fullYear.assumedNewBusinessRevenue)}
+          subtext="Revenue from deals not yet signed, at recent pace"
         />
       </div>
 
@@ -76,6 +78,31 @@ export default function ForecastPage() {
         </section>
       </div>
 
+      <section className="rounded-xl border border-black/10 dark:border-white/10 p-4">
+        <h2 className="text-sm font-semibold mb-1">Cash on hand projection</h2>
+        <p className="text-xs text-black/50 dark:text-white/50 mb-3">
+          Starting from the actual bank balance on the balance sheet, rolled forward by projected
+          net income. The low/high range reflects how much cash timing has historically swung
+          month to month (AR collections, quarterly billings) — treat it as a band, not a point
+          estimate, especially for the 1-month figure.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {forecast.cashProjection.map((c) => (
+            <div key={c.monthsOut} className="rounded-lg border border-black/10 dark:border-white/10 p-3">
+              <p className="text-xs font-medium uppercase tracking-wide text-black/50 dark:text-white/50">
+                {c.monthsOut} month{c.monthsOut > 1 ? "s" : ""} out ({c.period})
+              </p>
+              <p className="text-xl font-semibold tabular-nums mt-1">
+                {formatCurrency(c.estimatedCash)}
+              </p>
+              <p className="text-xs text-black/40 dark:text-white/40 mt-0.5">
+                {formatCurrency(c.lowBand)} – {formatCurrency(c.highBand)}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="rounded-xl border border-black/10 dark:border-white/10 overflow-x-auto">
         <table className="min-w-full text-sm">
           <thead>
@@ -83,9 +110,9 @@ export default function ForecastPage() {
               <th className="px-3 py-2 text-left font-medium">Month</th>
               <th className="px-3 py-2 text-left font-medium"></th>
               <th className="px-3 py-2 text-right font-medium">Revenue</th>
-              <th className="px-3 py-2 text-right font-medium">COGS</th>
+              <th className="px-3 py-2 text-right font-medium">Cost of Goods Sold</th>
               <th className="px-3 py-2 text-right font-medium">Gross Profit</th>
-              <th className="px-3 py-2 text-right font-medium">Opex</th>
+              <th className="px-3 py-2 text-right font-medium">Total Expenses</th>
               <th className="px-3 py-2 text-right font-medium">Net Income</th>
             </tr>
           </thead>
@@ -112,7 +139,7 @@ export default function ForecastPage() {
                   {formatCurrency(m.grossProfit)}
                 </td>
                 <td className="px-3 py-1.5 text-right tabular-nums">
-                  {formatCurrency(m.operatingExpenses)}
+                  {formatCurrency(m.totalExpenses)}
                 </td>
                 <td className="px-3 py-1.5 text-right tabular-nums font-semibold">
                   {formatCurrency(m.netIncome)}
@@ -132,7 +159,7 @@ export default function ForecastPage() {
                 {formatCurrency(forecast.fullYear.grossProfit)}
               </td>
               <td className="px-3 py-1.5 text-right tabular-nums">
-                {formatCurrency(forecast.fullYear.operatingExpenses)}
+                {formatCurrency(forecast.fullYear.totalExpenses)}
               </td>
               <td className="px-3 py-1.5 text-right tabular-nums">
                 {formatCurrency(forecast.fullYear.netIncome)}

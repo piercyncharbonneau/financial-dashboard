@@ -1,8 +1,12 @@
 import fs from "fs";
 import path from "path";
 import type { ManifestEntry, ReportData, Basis, Granularity } from "./types";
+import { kvGet } from "@/lib/kv";
 
 const SEED_DIR = path.join(process.cwd(), "data", "seed");
+
+/** Cache key used by src/lib/qbo/sync.ts when it writes a live-fetched report. */
+export const qboCacheKey = (granularity: "monthly", basis: Basis) => `qbo:pl:${granularity}:${basis}`;
 
 export function getManifest(): ManifestEntry[] {
   const raw = fs.readFileSync(path.join(SEED_DIR, "manifest.json"), "utf-8");
@@ -16,11 +20,21 @@ export function getReportById(id: string): ReportData {
   return JSON.parse(raw);
 }
 
-/** Most recent P&L export matching the given granularity + basis. */
-export function getLatestProfitAndLoss(
+/**
+ * Most recent P&L, preferring a live QuickBooks pull cached by
+ * src/lib/qbo/sync.ts over the manually-imported seed file. Only "monthly"
+ * is ever live-synced today (see sync.ts) — weekly always comes from the
+ * seed data, which is fine until someone builds the weekly sync too.
+ */
+export async function getLatestProfitAndLoss(
   granularity: Exclude<Granularity, null>,
   basis: Basis
-): ReportData {
+): Promise<ReportData> {
+  if (granularity === "monthly") {
+    const cached = await kvGet<ReportData>(qboCacheKey("monthly", basis));
+    if (cached) return cached;
+  }
+
   const candidates = getManifest()
     .filter(
       (m) =>
@@ -35,6 +49,13 @@ export function getLatestProfitAndLoss(
   return getReportById(candidates[0].id);
 }
 
+/**
+ * Balance sheet — always from the seed data for now, deliberately not
+ * live-synced yet. The QBO Report API's balance sheet group taxonomy
+ * wasn't something this code could validate without a real connection to
+ * test against, and a wrong cash balance is worse than a stale one — it
+ * feeds the cash-on-hand projection directly. See src/lib/qbo/reports.ts.
+ */
 export function getLatestBalanceSheet(basis: Basis = "accrual"): ReportData {
   const candidates = getManifest()
     .filter((m) => m.reportType === "balance-sheet" && m.basis === basis)

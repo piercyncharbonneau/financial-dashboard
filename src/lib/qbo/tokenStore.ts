@@ -1,16 +1,15 @@
-import fs from "fs";
-import path from "path";
+import { kvGet, kvSet } from "@/lib/kv";
 
 /**
- * Minimal file-based token store for the QuickBooks OAuth tokens, used to
- * get the integration running locally. Tokens are written to a gitignored
- * path outside the repo's version-controlled data/. Before rolling this
- * out to more than one operator, replace this with tokens stored in a real
- * secrets manager or an encrypted database row, since this file is
- * plaintext on disk.
+ * QuickBooks OAuth token storage. Backed by the kv abstraction (see
+ * src/lib/kv.ts) — a local file in dev, Upstash Redis in production once
+ * that integration is added in Vercel. Without persistent storage in
+ * production, tokens written by one serverless invocation won't be visible
+ * to the next, and the daily refresh cron / "Connect QuickBooks" flow will
+ * appear to work once and then silently lose the connection.
  */
 
-const STORE_PATH = path.join(process.cwd(), ".local", "qbo-tokens.json");
+const KEY = "qbo:tokens";
 
 export interface QboTokens {
   accessToken: string;
@@ -19,24 +18,10 @@ export interface QboTokens {
   expiresAt: number; // epoch ms
 }
 
-export function readQboTokens(): QboTokens | null {
-  try {
-    const raw = fs.readFileSync(STORE_PATH, "utf-8");
-    return JSON.parse(raw);
-  } catch {
-    return null;
-  }
+export async function readQboTokens(): Promise<QboTokens | null> {
+  return kvGet<QboTokens>(KEY);
 }
 
-export function writeQboTokens(tokens: QboTokens): void {
-  fs.mkdirSync(path.dirname(STORE_PATH), { recursive: true });
-  fs.writeFileSync(STORE_PATH, JSON.stringify(tokens, null, 2));
-}
-
-export function clearQboTokens(): void {
-  try {
-    fs.unlinkSync(STORE_PATH);
-  } catch {
-    // nothing to clear
-  }
+export async function writeQboTokens(tokens: QboTokens): Promise<void> {
+  await kvSet(KEY, tokens);
 }

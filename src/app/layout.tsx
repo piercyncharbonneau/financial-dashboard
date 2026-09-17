@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
+import { RefreshButton } from "@/components/RefreshButton";
 import { auth, signOut } from "@/auth";
 
 const geistSans = Geist({
@@ -37,6 +38,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
               </div>
               <Nav />
               <div className="mt-auto flex flex-col gap-2">
+                <RefreshButton />
                 <p className="text-xs text-black/40 dark:text-white/40 truncate">
                   {session.user?.email}
                 </p>

@@ -57,8 +57,8 @@ function IntegrationCard({
   );
 }
 
-export default function IntegrationsPage() {
-  const qboStatus = getConnectionStatus();
+export default async function IntegrationsPage() {
+  const qboStatus = await getConnectionStatus();
   const qboConfigured = isQboConfigured();
 
   return (
@@ -76,9 +76,10 @@ export default function IntegrationsPage() {
           description="Live financial data: P&L, balance sheet, cash flow. Currently seeded from manual monthly exports."
           status={qboStatus.connected ? "connected" : "not_configured"}
           needFromUser={[
-            "Create an app at developer.intuit.com (Accounting scope)",
-            "Set QBO_CLIENT_ID, QBO_CLIENT_SECRET, QBO_REDIRECT_URI, QBO_ENVIRONMENT env vars",
-            "Click Connect below and authorize against your company file",
+            "Intuit Developer app created (done) — but the credentials on file are Development/Sandbox keys, which only connect to a fake test company, not your real books",
+            "Get Production keys for the same app (the developer.intuit.com app page has a Production tab alongside Development) and set QBO_ENVIRONMENT=production with those keys",
+            "Deploy to Vercel first — the Connect button below has to run from the live site so Intuit can redirect back to a real HTTPS URL",
+            "Add the Upstash Redis integration in Vercel (Storage tab, one click) so the connection survives between requests — serverless functions don't share a local disk",
           ]}
         >
           {qboConfigured ? (

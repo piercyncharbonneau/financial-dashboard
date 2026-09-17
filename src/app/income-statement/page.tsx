@@ -38,7 +38,7 @@ export default async function IncomeStatementPage({
     params.granularity === "weekly" ? "weekly" : "monthly";
   const basis: Basis = params.basis === "cash" ? "cash" : "accrual";
 
-  const report = getLatestProfitAndLoss(granularity, basis);
+  const report = await getLatestProfitAndLoss(granularity, basis);
 
   const mkHref = (g: string, b: string) => `/income-statement?granularity=${g}&basis=${b}`;
 

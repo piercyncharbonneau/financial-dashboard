@@ -15,8 +15,8 @@ import { NetIncomeTrendChart } from "@/components/charts/NetIncomeTrendChart";
 import { MarginTrendChart } from "@/components/charts/MarginTrendChart";
 import { ExpenseBreakdownChart } from "@/components/charts/ExpenseBreakdownChart";
 
-export default function OverviewPage() {
-  const pl = getLatestProfitAndLoss("monthly", "accrual");
+export default async function OverviewPage() {
+  const pl = await getLatestProfitAndLoss("monthly", "accrual");
   const balanceSheet = getLatestBalanceSheet("accrual");
 
   const revenueTotal = summaryTotal(pl, "totalIncome");

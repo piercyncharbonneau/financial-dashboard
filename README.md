@@ -59,8 +59,52 @@ The parser is generic — it reads QuickBooks' own indentation and bold-total
 formatting to reconstruct the account hierarchy, so it should keep working
 as your chart of accounts changes. See `scripts/import_qbo_export.py`.
 
-This manual step goes away once the QuickBooks Online API integration
-(`src/lib/qbo/`) is connected — see Roadmap below.
+### Going live: QuickBooks
+
+`src/lib/qbo/` is a working live-data path, not just OAuth scaffolding:
+
+- `client.ts` — OAuth handshake + an authenticated client that auto-refreshes
+  an expiring token.
+- `reports.ts` — pulls a Profit & Loss report (any date range, summarized by
+  month) from the QBO Reports API and reshapes it into the same `ReportData`
+  structure the xlsx importer produces, so every page that reads a report
+  works unchanged regardless of source.
+- `sync.ts` — pulls trailing 24 months of monthly P&L (accrual + cash) and
+  caches it in the KV store (`src/lib/kv.ts`).
+- `tokenStore.ts` — OAuth tokens, also in the KV store.
+
+`src/lib/data/reports.ts`'s `getLatestProfitAndLoss` checks that cache first
+and only falls back to the seed JSON if nothing's been synced yet — so once
+QuickBooks is connected, the whole app (Overview, Income Statement, Forecast)
+switches to live data with no further changes needed.
+
+**Refresh happens two ways:** `vercel.json` schedules `/api/cron/refresh`
+daily; the sidebar's "Refresh data" button hits `/api/refresh` on demand.
+Both call the same `syncQboProfitAndLoss()`.
+
+**What's deliberately not live yet:** the Balance Sheet. The Reports API's
+group taxonomy for a balance sheet wasn't something this code could be
+tested against (no network access to Intuit's API from the environment it
+was built in), and a wrong cash figure is worse than a stale one — it feeds
+the cash-on-hand projection directly. It stays on the manual xlsx import
+until someone validates that parser against a real response.
+
+**Known gap:** `reports.ts`'s P&L parser is written against QuickBooks'
+documented Report API shape but has never run against a live response
+either, for the same reason. Treat the first real sync as a validation
+pass — pull up the same month in QuickBooks Online directly and compare.
+
+**Storage:** tokens and cached reports live in Upstash Redis in production
+(add the "Upstash for Redis" integration from the Vercel Storage tab — one
+click, it sets `UPSTASH_REDIS_REST_URL`/`UPSTASH_REDIS_REST_TOKEN`
+automatically) or a local file in dev. Without it in production, tokens
+written by one serverless invocation aren't visible to the next — Vercel
+functions don't share a disk.
+
+**Sandbox vs. production keys:** an Intuit Developer app issues separate
+Development (sandbox — a fake test company) and Production credentials.
+Make sure `QBO_CLIENT_ID`/`QBO_CLIENT_SECRET` in Vercel are the Production
+ones before expecting real company data.
 
 ### Sales tracker (Google Sheet)
 
@@ -84,33 +128,50 @@ Nobody has built this route yet.
 The Master Schedule and Inventory & Fleet Tracking sheets are not wired up
 yet — see the Integrations page for what's blocking each one.
 
-### 2026 full-year forecast
+### 2026 forecast + cash projection
 
 The Forecast page (`src/app/forecast/`, logic in `src/lib/data/forecast.ts`)
-blends actuals with a simple, explicit model rather than anything
-statistical — there's only 8 months of monthly data so far, not enough to
-fit a real seasonal curve:
+builds revenue bottom-up from the Sales Tracker rather than extrapolating a
+flat run-rate — HOODZ contracts auto-renew, so once ARR is added it recurs
+in perpetuity instead of being a one-time bump, and a flat run-rate model
+understates that:
 
-- **Baseline** — trailing 3-month average of actual revenue, held flat for
-  the remaining months of the year.
-- **Pipeline uplift** — for each remaining month, adds ARR/12 from Sales
-  Tracker deals whose first-service date falls after the last actual P&L
-  month. Only deals starting *after* the actuals cutoff count, so revenue
-  already baked into the historical run-rate is never double-counted.
-- **COGS** — forecast at the YTD aggregate ratio (sum of COGS / sum of
-  revenue) applied to forecast revenue, since it's substantially
-  labor/materials and scales with volume.
-- **Operating expenses** — forecast flat at the YTD monthly average, since
-  G&A and salaries are largely fixed rather than revenue-scaled.
-- Deals that are signed but don't have a first-service date yet aren't
-  placed in any month — they're surfaced separately as unscheduled
-  pipeline so nothing is silently dropped, but nothing is guessed either.
+- **Signed accounts, recurring forever** — every Sales Tracker deal bills
+  its Gross Ticket amount on first service and every N months after (N
+  implied by its billing frequency — quarterly, semi-annual, etc.), with no
+  end date. A deal signed in June keeps contributing revenue in every
+  future month its billing cycle lands on.
+- **Untracked baseline** — the Sales Tracker only goes back to Sept 2024, so
+  it doesn't explain 100% of actual revenue (legacy accounts, one-off
+  product sales). The gap between actual revenue and what the tracker's
+  model explains, for the trailing 3 actual months, is carried forward flat
+  as this baseline.
+- **Assumed new business** — future months also get an assumed new-deal
+  cohort sized off the trailing 3 months of actual signings (not a flat
+  full-year average), so a rep ramping up — or slowing down — shows up in
+  the forecast rather than getting smoothed away.
+- **Cost of Goods Sold** — the YTD aggregate ratio (sum of COGS / sum of
+  revenue) applied to forecast revenue, since it scales with volume.
+  **Operating expenses** are held flat at the YTD monthly average, since
+  G&A and salaries are largely fixed.
+- Deals signed but without a first-service date yet aren't placed in any
+  month — they're surfaced separately so nothing is silently dropped or
+  guessed into a month it might not land in.
 
-The full methodology (with the actual numbers behind each figure) is
-rendered on the page itself. This is a first pass — worth revisiting once
-there's a second year of monthly data to detect real seasonality, and once
-QuickBooks/ServiceBridge are live so the baseline updates itself instead of
-needing a manual re-import.
+**Cash-on-hand projection** starts from the actual bank balance on the
+balance sheet and rolls forward projected net income, adjusted by the
+historical average gap between cash-basis and accrual-basis net income
+(quarterly billings and AR collection timing make accrual and cash income
+diverge in any given month, even when they roughly net out over time). That
+gap swings widely month to month in the 8 months of history available (one
+month alone swung over $50k) — the projection reports a low/high band that
+widens for further-out months rather than a false-precision point estimate.
+
+The full methodology, with the actual numbers behind every assumption, is
+rendered on the page itself and recalculates on every refresh. This is a
+first pass — worth revisiting once there's a second year of data to detect
+real seasonality, and once ServiceBridge is live to see committed future
+work (open work orders), not just signed deals.
 
 ## Architecture
 
@@ -126,12 +187,16 @@ src/
     sign-in/                 Google sign-in
     api/auth/[...nextauth]/  NextAuth route handler
     api/integrations/quickbooks/   QuickBooks OAuth connect/callback routes
-  components/                 Presentational components (KpiCard, PLTable, nav, charts/)
+    api/refresh/             Manual "Refresh data" button, behind sign-in
+    api/cron/refresh/        Daily auto-refresh (Vercel Cron), CRON_SECRET-protected, excluded from sign-in gate
+  components/                 Presentational components (KpiCard, PLTable, nav, charts/, RefreshButton)
   lib/
     data/                     Report loading + derived metrics (reports.ts, metrics.ts, salesTracker.ts, salesMetrics.ts, forecast.ts, types.ts)
-    qbo/                      QuickBooks OAuth client + token storage (client.ts, tokenStore.ts)
+    qbo/                      client.ts, reports.ts (live P&L fetch), sync.ts (cache refresh), tokenStore.ts
+    kv.ts                     Upstash Redis in prod / local file in dev — see "Going live: QuickBooks" above
   auth.ts                     NextAuth config (Google provider, allowlist)
   proxy.ts                    Route protection (Next.js's replacement for middleware.ts)
+vercel.json                   Cron schedule for the daily refresh
 scripts/
   import_qbo_export.py        QBO xlsx -> JSON importer, see above
   import_sales_tracker.py     Sales tracker CSV -> JSON importer, see below
